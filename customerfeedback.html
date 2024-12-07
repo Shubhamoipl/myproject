@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Customer Feedback</title> 
+	
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		body{
+			background:#bbcc  ;
+		}
+
+
+
+ #btn {
+  background-color: DodgerBlue;  
+  color: white;  
+  padding: 18px 16px;   
+  cursor: pointer;
+  margin-top: 50px;
+   margin-left: 150px; 
+   
+}
+
+ 
+#btn:hover {
+  background-color: RoyalBlue;
+}
+
+
+
+		#Customer{width:550px;
+		    height: 80px;
+		    margin-left: 380px;
+		    background:lightgoldenrodyellow;
+		    font-size: 55px;
+		    text-align: center;
+		    opacity: 40%;
+		    color: darkred;
+		    border-radius: 150px 50px 150px 50px ;}
+
+
+		  #form{width:650px;
+		        height: 700px;
+		        background-color:lightskyblue ;
+		        margin-left: 320px;
+		        margin-top: 40px;
+		        border-radius: 35px;
+            font-size: 20px;
+
+		        }
+
+		   #head{color:orangered;
+		         animation: blink 2s linear infinite;
+
+		       }
+		       @keyframes blink {50%{color: blue;};
+		                         100%{color: greenyellow;}}
+
+		       #para{color: palevioletred;
+		             font-size: 25px;
+		             padding-top:20px;}
+
+         #h1{color: mediumvioletred;
+              margin-left: 200px;
+               padding-top: 50px;}
+
+         #feed{margin-left: 180px;
+               color: darkred;}
+
+         #button{border:2px solid indianred;
+		    	    width: 120px;
+		    	    height: 40px;
+		         border-radius: 125px;
+		         text-align: center;
+		         color: darkred;
+		          background-color:lightblue;
+		          font-size: 20px;
+		          margin-top: 35px;
+		          margin-left: 100px;
+		          }
+      
+         #demo{width: 400px;
+               height: 150px;
+               }
+     
+       #img1{width: 70%;
+             margin-top: 50px;
+             margin-left: 200px;
+            border-radius: 25px;}
+
+	</style>
+</head>
+<body>
+    <a id="btn" href="project.html"><i class="fa fa-home"></i></a>
+
+  <div id="Customer">Customer Feedback</div>
+  <h1 id="head"><marquee>We'll also look as some advanced feedback methodologies for visiter's sitting on high volumes of feedback.</marquee></h1>
+  <div id="form">
+  	<h1 id="h1">Feedback Form</h1>
+  	<p id="para">We would love to hear your thoughts, suggestions, concerns or problems with anything so we can improve!<p>
+  	<form>
+  		<div id="feed">
+
+  		<strong id="">Feedback Type:</strong>
+  		<br><br>
+  		<label>Comments</label>
+  		<input type="radio" >
+  		<label>Suggestions</label>
+  		<input type="radio" >
+  		<label>Questions</label>
+  		<input type="radio" >
+  		<br>
+  		<br>
+  		 <label>Describe your Feedback:</label>
+  		 <br>
+  		 <textarea></textarea>
+
+  		 <br><strong>Name:</strong>
+	 	<input id="name" type="text" placeholder="enter your name....">	
+       <br>
+       <br>
+	 	<strong>Email:</strong>
+	 	<input  id="email" type="email" placeholder="enter your email....">	
+
+	 <br>
+       <br>
+	 	<strong>Mo.Number:</strong>
+	 	<input  id="number" type="Number" placeholder="enter your mo.number....">
+	 	 <br>
+
+
+	 	 <button  id="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Press a button for submite Feedback OK or CANCEL!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</div>
+
+
+  	</form>
+
+  </div>
+
+
+  <img  id="img1" src="tourism2.jpg">
+</body>
+</html>

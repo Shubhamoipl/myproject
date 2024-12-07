@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bookingplaces</title>
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+   
+   #btn {
+  background-color: DodgerBlue;  
+  color: white;  
+  padding: 18px 16px;   
+  cursor: pointer;
+  margin-top: 50px;
+   margin-left: 150px; 
+   
+}
+
+ 
+#btn:hover {
+  background-color: RoyalBlue;
+}
+    
+
+
+		#contact{background: lightblue;
+		         width: 500px;
+		         height: 80px;
+		         margin-left: 400px;
+		         margin-top: 20px;
+		         text-align: center;
+		         font-size: 55px;
+		         border-radius: 180px 80px 180px 80px;
+		         color: darkgoldenrod;}
+
+		   #form{background:#ddbb;
+		         border: 15px solid #ccbb;
+		         border-radius:125px 20px 125px 20px ;
+		         width: 400px;
+		         height: 400px;
+		         margin-left: 430px;
+		        text-align: center;
+		        margin-top: 50px;
+		        padding-top: 60px;
+		        font-size: 30px;
+		        color:darkred;
+		       }
+
+		   body{background:lightsteelblue;}
+
+		   #name{border:2px solid indianred;
+		         border-radius: 125px 20px 125px 20px;
+		         text-align: center;
+		         color: darkred;
+		         background-color: lightblue;}
+
+		    #email{border:2px solid indianred;
+		         border-radius: 125px 20px 125px 20px;
+		         text-align: center;
+		         color: darkred;
+		         background-color: lightblue;}
+
+
+		    #number{border:2px solid indianred;
+		         border-radius: 125px 20px 125px 20px;
+		         text-align: center;
+		         color: darkred;
+		         background-color: lightblue;}
+
+		   #city{border:2px solid indianred;
+		         border-radius: 125px 20px 125px 20px;
+		         text-align: center;
+		         color: darkred;
+		          background-color: lightblue;}
+
+		    #button{border:2px solid indianred;
+		    	    width: 120px;
+		    	    height: 40px;
+		         border-radius: 125px;
+		         text-align: center;
+		         color: darkred;
+		          background-color:lightblue;
+		          font-size: 25px;
+		          font-family: cursive;}
+	</style>
+</head>
+<body>
+	<a id="btn" href="project.html"><i class="fa fa-home"></i></a>
+
+	 <div id="contact">BookingPlaces</div>
+	 <div id="form">
+	 	<form>
+	 	<strong>Name:</strong>
+	 	<input id="name" type="text" placeholder="enter your name....">	
+       <br>
+       <br>
+	 	<strong>Email:</strong>
+	 	<input  id="email" type="email" placeholder="enter your email....">	
+
+	 <br>
+       <br>
+	 	<strong>Mo.Number:</strong>
+	 	<input  id="number" type="Number" placeholder="enter your mo.number....">
+	 	 <br>
+       <br>
+	 	<strong>Select your city:</strong>
+	 	<select id="city">
+	 		<option selected>--Select City--</option>
+	 		<option>Agra</option>
+	 		<option>Delhi</option>
+	 		<option>Amritsar</option>
+	 		<option>Varansi</option>
+	 		<option>Manali</option>
+	 		<option>Haridwar</option>
+	 		<option>Jaipur</option>
+	 		<option>Goa</option>
+            <option>Darjiling</option>
+	 		<option>Mumbai</option>
+	 	</select>
+	 	<br>
+	 	<br>
+	 	 
+	 	<button  id="button" onclick="myFunction()">Submit</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  if (confirm("Press a button for booking OK or CANCEL!")) {
+    txt = "You pressed OK!";
+  } else {
+    txt = "You pressed Cancel!";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+	
+	 	</form>
+	 	
+	 </div>                                                                                                                                                                                                                                                                                                                                    
+
+</body>
+</html>
